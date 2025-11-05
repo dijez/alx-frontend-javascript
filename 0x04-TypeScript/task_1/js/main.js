@@ -7,3 +7,11 @@ var teacher = {
     contract: true
 };
 console.log(teacher);
+var director = {
+    firstName: "jane",
+    lastName: "rose",
+    fullTimeEmployee: true,
+    location: "eygpt",
+    numberOfReports: 3,
+};
+console.log(director);
