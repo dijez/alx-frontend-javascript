@@ -33,7 +33,7 @@ const director : Director = {
     numberOfReports : 3,
 }
 
-// console.log(director);
+console.log(director);
 
 
 interface printTeacherFunction{
