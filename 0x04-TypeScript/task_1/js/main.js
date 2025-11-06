@@ -1,12 +1,11 @@
-var teacher = {
-    firstName: "jane",
-    lastName: "rose",
-    fullTimeEmployee: true,
-    yearsOfExperience: 13,
-    location: "eygpt",
-    contract: true
+var teacher3 = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullTimeEmployee: false,
+    location: 'London',
+    contract: false,
 };
-console.log(teacher);
+console.log(teacher3);
 var director = {
     firstName: "jane",
     lastName: "rose",
@@ -15,7 +14,7 @@ var director = {
     numberOfReports: 3,
 };
 console.log(director);
-var printTeacher = function (firstName, lastName) {
-    return "".concat(firstName.charAt(0), ". ").concat(lastName);
-};
-console.log(printTeacher("john", "jeo"));
+function printTeacher(firstName, lastName) {
+    return "".concat(firstName, ". ").concat(lastName);
+}
+console.log(printTeacher("John", "Doe"));
