@@ -2,8 +2,8 @@ interface Teacher {
     readonly firstName : string;
     readonly lastName : string;
     fullTimeEmployee : boolean;
-    yearsOfExperience? : number; 
     location : string;
+    yearsOfExperience? : number; 
     [key : string] : any
 }
 
@@ -17,31 +17,31 @@ const teacher3: Teacher = {
 console.log(teacher3)
 
 
-interface Director extends Teacher{
-    // firstName : string,
-    // lastName : string,
-    // fullTimeEmployee : boolean,
-    // location : string,
-    numberOfReports: number
-}
+// interface Director extends Teacher{
+//     // firstName : string,
+//     // lastName : string,
+//     // fullTimeEmployee : boolean,
+//     // location : string,
+//     numberOfReports: number
+// }
 
-const director : Director = {
-    firstName : "jane",
-    lastName : "rose",
-    fullTimeEmployee : true,
-    location : "eygpt",
-    numberOfReports : 3,
-}
+// const director : Director = {
+//     firstName : "jane",
+//     lastName : "rose",
+//     fullTimeEmployee : true,
+//     location : "eygpt",
+//     numberOfReports : 3,
+// }
 
-console.log(director);
+// console.log(director);
 
 
-interface printTeacherFunction{
-    (firstName : string, lastName : string) :string
-}
+// interface printTeacherFunction{
+//     (firstName : string, lastName : string) :string
+// }
 
-const printTeacher : printTeacherFunction =(firstName , lastName) =>{
-    return `${firstName.charAt(0)}. ${lastName}`
-};
+// const printTeacher : printTeacherFunction =(firstName , lastName) =>{
+//     return `${firstName.charAt(0)}. ${lastName}`
+// };
 
-console.log(printTeacher("John", "Doe"))
+// console.log(printTeacher("John", "Doe"))
