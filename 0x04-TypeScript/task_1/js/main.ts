@@ -1,9 +1,9 @@
 interface Teacher {
-    readonly firstName : string,
-    readonly lastName : string,
-    fullTimeEmployee : boolean,
-    yearsOfExperience ? : number, 
-    location : string,
+    readonly firstName : string;
+    readonly lastName : string;
+    fullTimeEmployee : boolean;
+    yearsOfExperience ? : number; 
+    location : string;
     [key : string] : any
 }
 
@@ -16,7 +16,7 @@ const teacher : Teacher ={
     contract : true
 }
 
-console.log(teacher)
+// console.log(teacher)
 
 
 interface Director extends Teacher{
@@ -35,5 +35,17 @@ const director : Director = {
     numberOfReports : 3,
 }
 
-console.log(director);
+// console.log(director);
 
+
+interface printTeacherFunction{
+    (firstName : string,
+    lastName : string) :string
+}
+
+const printTeacher : printTeacherFunction =(firstName , lastName) =>
+{
+    return `${firstName.charAt(0)}. ${lastName}`
+};
+
+console.log(printTeacher("john", "jeo"))
