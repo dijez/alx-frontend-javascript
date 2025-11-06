@@ -2,7 +2,7 @@ interface Teacher {
     readonly firstName : string;
     readonly lastName : string;
     fullTimeEmployee : boolean;
-    yearsOfExperience ? : number; 
+    yearsOfExperience? : number; 
     location : string;
     [key : string] : any
 }
@@ -20,10 +20,10 @@ const teacher : Teacher ={
 
 
 interface Director extends Teacher{
-    firstName : string,
-    lastName : string,
-    fullTimeEmployee : boolean,
-    location : string,
+    // firstName : string,
+    // lastName : string,
+    // fullTimeEmployee : boolean,
+    // location : string,
     numberOfReports: number
 }
 
