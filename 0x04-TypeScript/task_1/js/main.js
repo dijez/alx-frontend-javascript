@@ -19,3 +19,19 @@ function printTeacher(_a) {
     return "".concat(firstName, ". ").concat(lastName);
 }
 console.log(printTeacher({ firstName: "John", lastName: "Doe" }));
+var StudentClass = /** @class */ (function () {
+    function StudentClass(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    StudentClass.prototype.workOnHomework = function () {
+        return "Currently working";
+    };
+    StudentClass.prototype.displayName = function () {
+        return this.firstName;
+    };
+    return StudentClass;
+}());
+var student = new StudentClass("john", "deo");
+console.log(student.displayName());
+console.log(student.workOnHomework());
