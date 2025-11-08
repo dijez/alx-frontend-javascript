@@ -57,7 +57,7 @@ interface StudentConstructor{
 }
 
 
-class StudentClass{
+class StudentClass {
     firstName: string;
     lastName: string;
 
