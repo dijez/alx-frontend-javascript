@@ -6,20 +6,16 @@ import * as CRUD from "./crud"
 // import { insertRow } from "./crud";
 // import { updateRow } from "./crud";
 
-const row : RowElement = {
+const row: RowElement = {
     firstName: "Guillaume",
     lastName: "Salva",
 }
 
 
-const newRowID : RowID = CRUD.insertRow(row
+const newRowID : RowID = CRUD.insertRow(row)
 
-)
-const updateRow: RowElement = {
-   firstName: "Guillaume",
-    lastName: "Salva",
-    age: 23
-};
 
-CRUD.updateRow(newRowID,updateRow)
+const updatedRow: RowElement = { ...row, age: 23 };
+
+CRUD.updateRow(newRowID,updatedRow)
 CRUD.deleteRow(newRowID);
