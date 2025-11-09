@@ -59,7 +59,7 @@ console.log(createEmployee("$5000"));
 // you should not use let here ecause you want to assign more than 1 value to a variable
 type Subjects = "Math" | "History";
 
-function teachClass( todayClass: Subjects): string{
+function teachClass(todayClass:Subjects): string{
     if (todayClass === "Math") {
         return "Teaching Math"
     }
