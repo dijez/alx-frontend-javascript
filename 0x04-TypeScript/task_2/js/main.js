@@ -42,3 +42,13 @@ function createEmployee(salary) {
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
 console.log(createEmployee("$5000"));
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+    else {
+        return "Teaching History";
+    }
+}
+console.log(teachClass("History"));
+console.log(teachClass("History"));
